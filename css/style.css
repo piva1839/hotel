@@ -13,42 +13,80 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	padding: 0;
 }
 
-.button {
-	display: inline-block;
-	padding: 20px 80px;
+@font-face {
+	font-family: "Roboto-Regular";
 
-	background: none;
-	border: 1px solid #ffffff;
-	outline: none;
-
-	font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
-	font-size: 36px;
-	line-height: 42px;
-	text-align: center;
-	color: #ffffff;
-
-	cursor: pointer;
-
-	opacity: 0.75;
-
-	transition: 0.5s;
-}
-
-.button:hover {
-	opacity: 1;
+	src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+	src: local("Roboto-Regular"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "BodoniC";
-	src: url("../fonts/BodoniC.otf") format("opentype");
-	src: local("BodoniC"), url("../fonts/BodoniC.otf") format("opentype"), url("../fonts/BodoniC.otf") format("opentype");
+	font-family: "Roboto-Bold";
+
+	src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+	src: local("Roboto-Bold"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
 }
 
-.item-card__slider {
-	margin: 0 30px;
+@font-face {
+	font-family: "Roboto-Italic";
+
+	src: url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
+	src: local("Roboto-Italic"), url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
 }
 
-.item-card__image {
+.button {
+	display: inline-block;
+
+	font-family: "Roboto-Regular", sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #000000;
+
+	cursor: pointer;
+}
+
+.main-header {
+	width: 100%;
+	height: 100vh;
+
+	background: #6381b3 url("../img/headerbg.jpg") no-repeat;
+	background-size: 100%;
+}
+
+.main-menu {
+	position: absolute;
+}
+
+.inner {
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-header__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-family: "Roboto-Regular", sans-serif;
+}
+
+.rooms__slider {
+	margin: 0 25px;
+}
+
+.rooms__slider-image {
 	width: 100%;
 	height: auto;
 	padding: 0 10px;

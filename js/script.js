@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.item-card__slider, .autoplay').slick({
+  $('.rooms__slider, .autoplay').slick({
     arrows: true,
     dots: true,
     slidesToShow: 3,
