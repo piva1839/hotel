@@ -42,7 +42,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 .main-menu {
 	position: fixed;
-
 	width: 100%;
 
 	background: rgba(255, 255, 255, 0.3);
@@ -59,15 +58,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 .main-menu__list {
 	list-style-type: none;
 	display: flex;
+	justify-content: flex-end;
 	align-items: center;
-	width: 50%;
-	margin-left: auto;
+	flex-wrap: wrap;
 	padding: 30px 0;
 }
 
 .main-menu__item {
-	flex: 1;
-	margin-left: 10px;
+	margin-left: 40px;
 
 	text-align: center;
 
@@ -120,7 +118,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .button--lang {
-	margin-left: 0;
 	padding: 10px 30px 10px 0;
 
 	background: transparent url("../img/buttonlang.png") no-repeat;
@@ -137,7 +134,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 	cursor: pointer;
 
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 .button--lang:hover {
@@ -221,17 +218,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 @media screen and (max-width: 1370px) {
 	.main-menu__list {
-		width: 65%;
+		justify-content: space-around;
+		padding: 20px 0;
 	}
 
 	.main-header__title {
-		margin-top: 150px;
+		margin-top: 80px;
 		margin-bottom: 50px;
 
 		font-family: "Roboto-Bold", sans-serif;
 		font-size: 54px;
 		line-height: 62px;
 		color: #ffffff;
+		text-shadow:  0 10px 30px rgba(71, 71, 71, 0.7);
 	}
 
 	.button--arrow {
