@@ -70,7 +70,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	margin-left: 10px;
 
 	text-align: center;
-	color: #ffffff;
 
 	transition: 0.3s;
 }
@@ -84,7 +83,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .button {
-	margin-left: 40px;
 	padding: 10px 30px;
 
 	background: none;
@@ -165,12 +163,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-left: 250px;
 }
 
 .main-header__title {
 	width: 40%;
 	margin-top: 250px;
+	margin-left: 250px;
 	margin-bottom: 150px;
 
 	font-family: "Roboto-Bold", sans-serif;
@@ -180,7 +178,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .button--arrow {
-	margin-left: 0;
+	margin-left: 250px;
 	padding: 10px 50px 10px 0;
 
 	background: transparent url("../img/buttonarrow.png") no-repeat;
@@ -219,4 +217,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	width: 100%;
 	height: auto;
 	padding: 0 10px;
+}
+
+@media screen and (max-width: 1370px) {
+	.main-menu__list {
+		width: 65%;
+	}
+
+	.main-header__title {
+		margin-top: 150px;
+		margin-bottom: 50px;
+
+		font-family: "Roboto-Bold", sans-serif;
+		font-size: 54px;
+		line-height: 62px;
+		color: #ffffff;
+	}
+
+	.button--arrow {
+		font-family: "Roboto-Bold", sans-serif;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
 }
