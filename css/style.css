@@ -171,6 +171,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	font-size: 84px;
 	line-height: 92px;
 	color: #ffffff;
+	text-shadow: 0 15px 50px #0e3a7c;
 }
 
 .button--arrow {
