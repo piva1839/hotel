@@ -52,7 +52,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	max-width: 1920px;
 	height: 100%;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px 0 250px;
+}
+
+.main-menu__inner {
+	padding: 0 20px;
 }
 
 .main-menu__list {
@@ -70,6 +74,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	text-align: center;
 
 	transition: 0.3s;
+}
+
+.main-menu__item:first-child {
+	margin-left: 0;
 }
 
 .main-menu__item:hover {
@@ -164,7 +172,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 .main-header__title {
 	margin-top: 100px;
-	margin-left: 250px;
 	margin-bottom: 100px;
 
 	font-family: "Roboto-Bold", sans-serif;
@@ -175,7 +182,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .button--arrow {
-	margin-left: 250px;
 	padding: 10px 50px 10px 0;
 
 	background: transparent url("../img/buttonarrow.png") no-repeat;
@@ -206,14 +212,88 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	transform: scale(1.1) translateX(10px);
 }
 
-.rooms__slider {
-	margin: 0 25px;
+.block-title {
+	margin: 100px 0 50px;
+
+	font-family: "Roboto-Bold", sans-serif;
+	font-size: 52px;
+	line-height: 62px;
+	color: #54758a;
 }
 
-.rooms__slider-image {
+.rooms__slider {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rooms__slide {
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 100px;
+
+	box-shadow: 0 5px 30px #000000;
+}
+
+.rooms__slide-image {
 	width: 100%;
 	height: auto;
-	padding: 0 10px;
+}
+
+.rooms__slide-content {
+	padding: 40px 30px;
+}
+
+.rooms__slide-title {
+	font-family: "Roboto-Bold", sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	color: #54758a;
+}
+
+.rooms__slide-price {
+	margin: 20px 0;
+
+	font-family: "Roboto-Regular", sans-serif;
+	font-size: 21px;
+	line-height: 28px;
+	color: #54758a;
+}
+
+.rooms__slide-price--green {
+	font-family: "Roboto-Bold", sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	color: #72921e;
+}
+
+.button--slide {
+	display: flex;
+	margin-left: auto;
+	padding: 10px 50px 10px 0;
+
+	background: transparent url("../img/bbuttonarrow.png") no-repeat;
+	background-position: right center;
+	border: none;
+	outline: none;
+
+	font-family: "Roboto-Bold", sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #72921e;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+}
+
+.button--slide:hover {
+	background: transparent url("../img/bbuttonarrow-hover.png") no-repeat;
+	background-position: right center;
+	border: none;
+	outline: none;
+
+	color: #72921e;
 }
 
 @media screen and (max-width: 1370px) {
