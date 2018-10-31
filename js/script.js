@@ -1,12 +1,8 @@
 $(document).ready(function(){
 
-  $('.rooms__slider, .autoplay').slick({
-    arrows: false,
+  $('.rooms__slider').slick({
+    arrows: true,
     dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
   });
 
 });
