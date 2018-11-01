@@ -239,7 +239,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .rooms__slide-content {
-	padding: 40px 30px;
+	width: 30%;
+	padding: 20px 30px;
 }
 
 .rooms__slide-capacity {
@@ -249,11 +250,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 .rooms__slide-capacity--min,
 .rooms__slide-capacity--max {
 	margin-left: 5px;
+	padding: 2px 3px;
+
+	background-color: #72921e;
+	border-radius: 3px;
 
 	font-family: "Roboto-Regular", sans-serif;
-	font-size: 16px;
-	line-height: 18px;
-	color: #72921e;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
 }
 
 .rooms__slide-title {
@@ -291,8 +296,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .button--slide {
-	display: flex;
-	margin-left: auto;
 	padding: 10px 50px 10px 0;
 
 	background: transparent url("../img/bbuttonarrow.png") no-repeat;
@@ -318,6 +321,26 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	outline: none;
 
 	color: #72921e;
+}
+
+.rooms__facilities {
+	width: 40%;
+	padding: 20px 30px;
+}
+
+.rooms__facilities-list {
+	list-style-type: none;
+
+	font-family: "Roboto-Regular", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.rooms__facilities-item {
+	padding-left: 20px;
+
+	background: url("../img/checked_g.png") no-repeat;
+	background-position: left top;
 }
 
 @media screen and (max-width: 1370px) {
